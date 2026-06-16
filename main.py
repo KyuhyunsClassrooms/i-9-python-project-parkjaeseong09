@@ -87,16 +87,3 @@ while True:
 
     else:
         print("잘못된 번호입니다. 1~4번 사이의 번호를 입력해 주세요.")
-
-
-# [4단계] 2차원 리스트 탐색 및 결과 출력
-for emp in employee_data:
-    # emp[0]은 이름, emp[1]은 실적점수
-    grade = calculate_grade(emp[1]) 
-    bonus = calculate_bonus(grade)
-    
-    print(f"\n--- [평가 결과] ---")
-    print(f"이름: {emp[0]}")
-    print(f"실적 점수: {emp[1]}점")
-    print(f"평가 등급: {grade}") 
-    print(f"성과급: {bonus}원")
